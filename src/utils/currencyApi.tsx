@@ -1,4 +1,4 @@
-export const BASE_URL = "http://api.exchangeratesapi.io/v1/latest?access_key=2f1976bd4296319d7d560ffa0adbf850";
+export const BASE_URL = "https://www.cbr-xml-daily.ru/latest.js";
 
 function handleResponse(res: Response) {
   if (res.ok) {return res.json()}

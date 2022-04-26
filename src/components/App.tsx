@@ -30,7 +30,7 @@ const App: React.FC = () => {
   useEffect(() => {
     getCurrency()
       .then(res => {
-        setRates(res.rates);
+        setRates({ [res.base]: 1, ...res.rates });
         setCurrencyIn(getArrayRandomElement(Object.keys(res.rates)));
         setCurrencyOut(getArrayRandomElement(Object.keys(res.rates)));
         // setCurrencyIn(localCurrencyIn);
@@ -51,7 +51,6 @@ const App: React.FC = () => {
   const handleAmountInChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // eslint-disable-next-line no-useless-escape
     if (event.target.value.match(onlyFloatNumberRegExp)) {
-      console.log(event.target.value);
       setAmountOut(format(Number(event.target.value) * rates[currencyOut] / rates[currencyIn]));
       setAmountIn(event.target.value);
       setAmountInError(false);
