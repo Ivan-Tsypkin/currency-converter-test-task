@@ -10,6 +10,24 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    resources: {
+      en: {
+        translation: {
+          header: "Currency converter",
+          amountInInput: "Change",
+          amountOutInput: "Get",
+          amountErrorText: "Numbers and • only"
+        }
+      },
+      ru: {
+        translation: {
+          header: "Конвертер валют",
+          amountInInput: "Меняю",
+          amountOutInput: "Получаю",
+          amountErrorText: "Допустимы только цифры и •"
+        }
+      }
+    }
   });
 
 export default i18n;

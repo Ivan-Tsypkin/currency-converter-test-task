@@ -2,3 +2,5 @@
 
 - Курс актуализируется автоматически
 - Доступны русский и английский языки
+
+- Ссылка на страницу: https://ivan-tsypkin.github.io/currency-converter-test-task/
