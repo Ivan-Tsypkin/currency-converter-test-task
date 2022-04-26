@@ -1,0 +1,6 @@
+{
+  "header": "Currency converter",
+  "amountInInput": "Change",
+  "amountOutInput": "Get",
+  "amountErrorText": "Numbers and • only"
+}
