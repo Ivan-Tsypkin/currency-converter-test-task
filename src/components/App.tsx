@@ -30,7 +30,7 @@ const App: React.FC = () => {
   useEffect(() => {
     getCurrency()
       .then(res => {
-        setRates(res.rates);
+        setRates({ [res.base]: 1, ...res.rates });
         setCurrencyIn(getArrayRandomElement(Object.keys(res.rates)));
         setCurrencyOut(getArrayRandomElement(Object.keys(res.rates)));
         // setCurrencyIn(localCurrencyIn);
